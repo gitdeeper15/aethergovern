@@ -8,7 +8,7 @@
 
 <br>
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24078477.svg)](https://doi.org/10.5281/zenodo.24078477)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24054524.svg)](https://doi.org/10.5281/zenodo.24054524)
 [![License: MIT + CC-BY-4.0](https://img.shields.io/badge/License-MIT%20%2B%20CC--BY--4.0-crimson.svg)](LICENSE)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0003--8903--0029-a6ce39?logo=orcid&logoColor=white)](https://orcid.org/0009-0003-8903-0029)
 [![Release](https://img.shields.io/badge/Release-v0.1.0-green)](https://github.com/gitdeeper15/aetherruntime/releases/tag/v0.1.0)
