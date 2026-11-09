@@ -1,0 +1,126 @@
+{
+  "project": "AetherGovern",
+  "version": "2.0.0",
+  "paper_version": "0.1.0",
+  "date": "2026-11-09",
+  "status": "reference_implementation_with_reproducible_experiments",
+  "record_id": "AETHERGOVERN-02",
+  "provisional": false,
+  "doi": "10.5281/zenodo.24054524",
+  "doi_url": "https://doi.org/10.5281/zenodo.24054524",
+  "concept_doi": "10.5281/zenodo.24054523",
+  "concept_doi_url": "https://doi.org/10.5281/zenodo.24054523",
+  "osf_doi": "10.17605/OSF.IO/TAHC8",
+  "osf_url": "https://doi.org/10.17605/OSF.IO/TAHC8",
+  "methodology": {
+    "approach": "falsification-first",
+    "no_prior_assumption": true,
+    "failure_conditions": {
+      "F1": "Non-redundancy",
+      "F2": "Orthogonality to verification",
+      "F3": "Boundary with orchestration",
+      "F4": "Decentralizability",
+      "F5": "Observable benefit"
+    },
+    "requirements": {
+      "R1": "Scoped, attenuating delegation",
+      "R2": "Authorized policy change",
+      "R3": "Revocation with dependents",
+      "R4": "Attribution",
+      "R5": "Dispute handling",
+      "R6": "Partition tolerance"
+    }
+  },
+  "formal_definitions": {
+    "D1_delegation_certificate": {
+      "statement": "c = (issuer, subject, scope, constraints, expiry, parent, signature)",
+      "status": "defined",
+      "implemented": "src/aethergovern/models.py:DelegationCertificate"
+    },
+    "D2_chain_validity": {
+      "statement": "A chain is valid at frontier F iff (a) signatures verify, (b) scope attenuates, (c) no expiry, (d) no revocation, (e) root recognized",
+      "status": "defined",
+      "implemented": "src/aethergovern/authorization/certificates.py:check"
+    },
+    "D3_causal_authority_admission": {
+      "statement": "Every action cites the frontier F and policy version it relied on; the check evaluates at F",
+      "status": "defined",
+      "implemented": "src/aethergovern/authorization/certificates.py:check"
+    },
+    "D4_revocation_set": {
+      "statement": "The set of revocation records known at a node; adding can only invalidate",
+      "status": "defined",
+      "implemented": "src/aethergovern/revocation/frontier.py"
+    }
+  },
+  "propositions": {
+    "P1_determinism": {
+      "statement": "Causal-authority admission preserves the determinism requirement of AetherMesh (assumption A6).",
+      "status": "proof_sketch",
+      "machine_checked": false
+    },
+    "P2_monotonicity": {
+      "statement": "Validity is antitone in the revocation frontier; revocation can be recorded without coordination.",
+      "status": "proof_sketch",
+      "machine_checked": false
+    }
+  },
+  "implementation": {
+    "status": "built",
+    "package_name": "aethergovern",
+    "version": "2.0.0",
+    "modules": 15,
+    "source_dir": "src/aethergovern/",
+    "cli_available": true,
+    "pypi_published": false
+  },
+  "test_suite": {
+    "framework": "pytest",
+    "test_files": 7,
+    "total_tests": 60,
+    "passed": 60,
+    "failed": 0
+  },
+  "experiments": {
+    "count": 3,
+    "directory": "experiments/",
+    "authorization_correctness": {
+      "path": "experiments/authorization_correctness/",
+      "metric": "M1 (unauthorized-action admission rate)",
+      "result": "0.0000"
+    },
+    "exposure_window": {
+      "path": "experiments/exposure_window/",
+      "metrics": ["M2 (exposure count)", "M3 (exposure duration)"],
+      "result": {"M2": 0, "M3_median_ms": 100.0}
+    },
+    "attribution_accuracy": {
+      "path": "experiments/attribution_accuracy/",
+      "metrics": ["M4 (attribution completeness)", "M5 (attribution accuracy)"],
+      "result": {"M4": 1.0, "M5": 1.0}
+    }
+  },
+  "assessment": {
+    "F1": "not_falsified",
+    "F2": "not_falsified_narrowly",
+    "F3": "not_falsified_decentralized_setting",
+    "F4": "not_falsified_with_residuals",
+    "F5": "untested"
+  },
+  "open_questions": 20,
+  "design_principles": 8,
+  "threats": 7,
+  "real_world_deployment": "not_evaluated",
+  "peer_reviewed": false,
+  "causal_claims": "none",
+  "relations": {
+    "aethergit": "storage layer — requires append-only changeset log",
+    "aetherflow": "integration layer — requires message-based protocol",
+    "aetherproof": "verification layer — nothing mandatory",
+    "aethermesh": "decentralization layer — requires delta replication and determinism-compatible predicate"
+  },
+  "license": {
+    "code": "MIT",
+    "docs": "CC-BY-4.0"
+  }
+}

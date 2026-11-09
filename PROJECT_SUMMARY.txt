@@ -1,0 +1,86 @@
+Project: AetherGovern
+Full Title: AetherGovern: A Falsification-First Investigation of Governance in the Aether Family
+Subtitle: A Falsification-First Investigation of Authority, Policy, and Accountability in Multi-Agent Software Ecosystems
+Domain: Distributed Systems / Software Engineering / Institutional Analysis
+Subdiscipline: Governance, Authority, Policy, Accountability, Revocation, Dispute Resolution, Multi-Agent Systems
+DOI (Zenodo, v0.1.0): 10.5281/zenodo.24054524
+DOI URL: https://doi.org/10.5281/zenodo.24054524
+Concept DOI: 10.5281/zenodo.24054523
+OSF Registration: 10.17605/OSF.IO/TAHC8
+OSF URL: https://doi.org/10.17605/OSF.IO/TAHC8
+Stage: REFERENCE IMPLEMENTATION (v2.0.0) + FORMAL ARCHITECTURE (v0.1.0)
+Version: 2.0.0
+Paper Version: 0.1.0
+Date: 2026-11-09
+Record ID: AETHERGOVERN-02
+
+Methodology: Falsification-First
+  - No prior assumption that the gap exists
+  - No prior assumption that AetherGovern should be a separate project
+  - Every claim tested against failure conditions (F1-F5)
+  - Final structure determined after comparison
+
+Failure Conditions: 5 (F1-F5)
+  - F1: Non-redundancy
+  - F2: Orthogonality to verification
+  - F3: Boundary with orchestration
+  - F4: Decentralizability
+  - F5: Observable benefit
+
+Formal Definitions: 4
+  - D1: Delegation Certificate
+  - D2: Chain Validity at Frontier F
+  - D3: Causal-Authority Admission
+  - D4: Revocation Set
+
+Propositions: 2 (with proof sketches; not machine-checked)
+  - P1: Determinism of Causal-Authority Admission
+  - P2: Monotonicity of Revocation
+
+Provisional Assessment:
+  - F1: Not falsified (R1, R3, R5 uncovered)
+  - F2: Not falsified (narrowly)
+  - F3: Not falsified (decentralized setting)
+  - F4: Not falsified (with residuals)
+  - F5: Untested
+
+Implementation (v2.0.0):
+  Package: aethergovern
+  Version: 2.0.0
+  Modules: 15 (Python)
+  Lines: ~1,540
+  CLI: aethergovern info | verify
+  Tests: 60 (pytest)
+  Experiments: 3 (authorization, exposure window, attribution)
+  PyPI: Not yet published
+  Install: pip install aethergovern (after publication)
+
+Open Questions: 20 (Q1-Q20)
+Design Principles: 8 (P1-P8)
+Threats to Validity: 7
+
+Real-World Deployment: Not evaluated
+Peer Review: Not reviewed
+Causal Claims: None (argument only)
+
+Position in Aether Family (fifth functional dimension, provisional):
+  - Dimension 1 (storage): AetherGit — 10.5281/zenodo.23966896
+  - Dimension 2 (integration): AetherFlow — 10.5281/zenodo.23979129
+  - Dimension 3 (verification): AetherProof — 10.5281/zenodo.24013124
+  - Dimension 4 (decentralization): AetherMesh — 10.5281/zenodo.24053492
+  - Dimension 5 (governance, provisional): AetherGovern — 10.5281/zenodo.24054524
+
+Repositories:
+  - GitHub (primary): https://github.com/gitdeeper15/aethergovern
+  - GitLab (mirror): https://gitlab.com/gitdeeper15/aethergovern
+  - Codeberg (mirror): https://codeberg.org/gitdeeper15/aethergovern
+  - Bitbucket (mirror): https://bitbucket.org/gitdeeper15/aethergovern
+  - PyPI: https://pypi.org/project/aethergovern/ (not yet published)
+  - Zenodo: https://doi.org/10.5281/zenodo.24054524
+  - OSF: https://doi.org/10.17605/OSF.IO/TAHC8
+  - Website: https://aethergovern.netlify.app
+
+Author: Samir Baladi
+ORCID: 0009-0003-8903-0029
+Affiliation: Ronin Institute / Rite of Renaissance
+Email: gitdeeper@gmail.com

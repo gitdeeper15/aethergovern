@@ -1,0 +1,74 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: software
+title: "AetherGovern v2.0.0: Reference Implementation of the Falsification-First Governance Architecture"
+version: 2.0.0
+doi: 10.5281/zenodo.24054524
+date-released: 2026-11-09
+license: MIT
+license-url: https://opensource.org/licenses/MIT
+repository-code: https://github.com/gitdeeper15/aethergovern
+url: https://doi.org/10.5281/zenodo.24054524
+abstract: >
+  AetherGovern v2.0.0 is the reference implementation of the AetherGovern
+  falsification-first governance architecture specified in v0.1.0. It
+  implements ten entities, seven operations, and 47 invariants, with a
+  test suite of 60 tests and three reproducible experiments. The v0.1.0
+  hypothesis (F1-F5) is not falsified by the implementation or the
+  experiments, but is also not confirmed. The final project structure
+  (single, dual, or triple project) remains undetermined. No real-world
+  deployment has been evaluated.
+keywords:
+  - AetherGovern
+  - governance
+  - authorization
+  - policy
+  - accountability
+  - revocation
+  - dispute resolution
+  - multi-agent systems
+  - falsification
+  - decentralized systems
+  - aether family
+authors:
+  - family-names: Baladi
+    given-names: Samir
+    orcid: https://orcid.org/0009-0003-8903-0029
+    email: gitdeeper@gmail.com
+    affiliation: "Ronin Institute / Rite of Renaissance"
+references:
+  - type: software
+    title: "AetherGit: Scalable Source Control for Autonomous AI Agents"
+    authors:
+      - family-names: Baladi
+        given-names: Samir
+    doi: 10.5281/zenodo.23966896
+    date-released: 2026
+  - type: generic
+    title: "AetherFlow: Automated Post-Merge Verification and Dynamic Conflict Resolution in Multi-Agent Programming Environments"
+    authors:
+      - family-names: Baladi
+        given-names: Samir
+    doi: 10.5281/zenodo.23979129
+    date-released: 2026
+  - type: generic
+    title: "AetherProof: Autonomous Formal Verification and Invariant Synthesis for Multi-Agent Software Ecosystems"
+    authors:
+      - family-names: Baladi
+        given-names: Samir
+    doi: 10.5281/zenodo.24013124
+    date-released: 2026
+  - type: software
+    title: "AetherMesh: Decentralized Peer-to-Peer Agent Synchronization and State CRDTs"
+    authors:
+      - family-names: Baladi
+        given-names: Samir
+    doi: 10.5281/zenodo.24053492
+    date-released: 2026
+identifiers:
+  - type: doi
+    value: 10.17605/OSF.IO/TAHC8
+    description: OSF Registration
+  - type: doi
+    value: 10.5281/zenodo.24054523
+    description: Concept DOI (all versions)

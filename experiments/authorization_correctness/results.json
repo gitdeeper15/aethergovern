@@ -1,0 +1,42 @@
+{
+  "experiment": "authorization_correctness",
+  "description": "Unauthorized-action admission rate (M1)",
+  "source": "docs/specification/05_test_design.md",
+  "runs": [
+    {
+      "n_nodes": 10,
+      "n_revocations": 2,
+      "total_unauthorized": 2,
+      "admitted_unauthorized": 0,
+      "m1_unauthorized_admission_rate": 0.0
+    },
+    {
+      "n_nodes": 50,
+      "n_revocations": 5,
+      "total_unauthorized": 5,
+      "admitted_unauthorized": 0,
+      "m1_unauthorized_admission_rate": 0.0
+    },
+    {
+      "n_nodes": 100,
+      "n_revocations": 10,
+      "total_unauthorized": 10,
+      "admitted_unauthorized": 0,
+      "m1_unauthorized_admission_rate": 0.0
+    },
+    {
+      "n_nodes": 250,
+      "n_revocations": 20,
+      "total_unauthorized": 20,
+      "admitted_unauthorized": 0,
+      "m1_unauthorized_admission_rate": 0.0
+    },
+    {
+      "n_nodes": 500,
+      "n_revocations": 50,
+      "total_unauthorized": 50,
+      "admitted_unauthorized": 0,
+      "m1_unauthorized_admission_rate": 0.0
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "manifest_version": "1.0",
+  "project": {
+    "name": "AetherGovern",
+    "provisional": false,
+    "full_title": "AetherGovern: A Falsification-First Investigation of Governance in the Aether Family",
+    "subtitle": "A Falsification-First Investigation of Authority, Policy, and Accountability in Multi-Agent Software Ecosystems",
+    "version": "2.0.0",
+    "paper_version": "0.1.0",
+    "type": "research_paper_with_reference_implementation",
+    "status": "reference_implementation_with_reproducible_experiments",
+    "release_date": "2026-11-09",
+    "language": "en",
+    "doi": "10.5281/zenodo.24054524",
+    "doi_url": "https://doi.org/10.5281/zenodo.24054524",
+    "concept_doi": "10.5281/zenodo.24054523",
+    "concept_doi_url": "https://doi.org/10.5281/zenodo.24054523",
+    "record_id": "AETHERGOVERN-02",
+    "dimension": "fifth functional dimension (provisional)"
+  },
+  "author": {
+    "name": "Samir Baladi",
+    "role": "Interdisciplinary AI Researcher",
+    "affiliation": "Ronin Institute / Rite of Renaissance",
+    "email": "gitdeeper@gmail.com",
+    "orcid": "0009-0003-8903-0029"
+  },
+  "methodology": {
+    "approach": "falsification-first",
+    "prior_assumption": "none",
+    "failure_conditions": ["F1", "F2", "F3", "F4", "F5"],
+    "requirements": ["R1", "R2", "R3", "R4", "R5", "R6"],
+    "final_structure": "determined_after_comparison"
+  },
+  "formal_definitions": [
+    {"id": "D1", "name": "Delegation Certificate", "status": "defined"},
+    {"id": "D2", "name": "Chain Validity at Frontier F", "status": "defined"},
+    {"id": "D3", "name": "Causal-Authority Admission", "status": "defined"},
+    {"id": "D4", "name": "Revocation Set", "status": "defined"}
+  ],
+  "propositions": [
+    {"id": "P1", "name": "Determinism of Causal-Authority Admission", "status": "proof_sketch", "machine_checked": false},
+    {"id": "P2", "name": "Monotonicity of Revocation", "status": "proof_sketch", "machine_checked": false}
+  ],
+  "architectural_pillars": [
+    "Pillar 1 — CRDTs for Code and Metadata DAGs",
+    "Pillar 2 — Epidemic Gossip Protocols",
+    "Pillar 3 — Lightweight Byzantine Fault Tolerance"
+  ],
+  "implementation": {
+    "status": "built",
+    "package_name": "aethergovern",
+    "package_version": "2.0.0",
+    "pypi_published": false,
+    "modules": 15,
+    "tests": 60,
+    "experiments": 3
+  },
+  "documents": [
+    {"id": "01", "name": "01_entities.md", "status": "complete"},
+    {"id": "02", "name": "02_operations.md", "status": "complete"},
+    {"id": "03", "name": "03_invariants.md", "status": "complete"},
+    {"id": "04", "name": "04_interfaces.md", "status": "complete"},
+    {"id": "05", "name": "05_test_design.md", "status": "complete"}
+  ],
+  "assessment": {
+    "F1": "not_falsified",
+    "F2": "not_falsified_narrowly",
+    "F3": "not_falsified_decentralized_setting",
+    "F4": "not_falsified_with_residuals",
+    "F5": "untested"
+  },
+  "links": {
+    "github": "https://github.com/gitdeeper15/aethergovern",
+    "gitlab": "https://gitlab.com/gitdeeper15/aethergovern",
+    "codeberg": "https://codeberg.org/gitdeeper15/aethergovern",
+    "bitbucket": "https://bitbucket.org/gitdeeper15/aethergovern",
+    "pypi": "https://pypi.org/project/aethergovern/",
+    "zenodo": "https://doi.org/10.5281/zenodo.24054524",
+    "website": "https://aethergovern.netlify.app",
+    "osf": "https://doi.org/10.17605/OSF.IO/TAHC8",
+    "related_aethergit": "https://doi.org/10.5281/zenodo.23966896",
+    "related_aetherflow": "https://doi.org/10.5281/zenodo.23979129",
+    "related_aetherproof": "https://doi.org/10.5281/zenodo.24013124",
+    "related_aethermesh": "https://doi.org/10.5281/zenodo.24053492"
+  },
+  "artifacts": {
+    "manuscript": {
+      "path": "PUBLICATION/AetherGovern_Research_Paper.pdf",
+      "pages": 33,
+      "version": "0.1.0"
+    },
+    "figures_dir": "docs/figures/",
+    "specification_dir": "docs/specification/",
+    "source_dir": "src/aethergovern/",
+    "tests_dir": "tests/",
+    "experiments_dir": "experiments/",
+    "report_v2_path": "REPORTS/v2.0.0/report.md"
+  },
+  "real_world_deployment": false,
+  "peer_reviewed": false,
+  "license": {
+    "code": "MIT",
+    "docs": "CC-BY-4.0"
+  }
+}

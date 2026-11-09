@@ -1,0 +1,52 @@
+{
+  "experiment": "attribution_accuracy",
+  "description": "Attribution completeness (M4) and accuracy (M5)",
+  "source": "docs/specification/05_test_design.md",
+  "runs": [
+    {
+      "n_nodes": 10,
+      "n_actions_per_node": 5,
+      "total_actions": 45,
+      "m4_recovered": 45,
+      "m4_attribution_completeness": 1.0,
+      "m5_correct": 45,
+      "m5_attribution_accuracy": 1.0
+    },
+    {
+      "n_nodes": 50,
+      "n_actions_per_node": 5,
+      "total_actions": 245,
+      "m4_recovered": 245,
+      "m4_attribution_completeness": 1.0,
+      "m5_correct": 245,
+      "m5_attribution_accuracy": 1.0
+    },
+    {
+      "n_nodes": 100,
+      "n_actions_per_node": 5,
+      "total_actions": 495,
+      "m4_recovered": 495,
+      "m4_attribution_completeness": 1.0,
+      "m5_correct": 495,
+      "m5_attribution_accuracy": 1.0
+    },
+    {
+      "n_nodes": 250,
+      "n_actions_per_node": 3,
+      "total_actions": 747,
+      "m4_recovered": 747,
+      "m4_attribution_completeness": 1.0,
+      "m5_correct": 747,
+      "m5_attribution_accuracy": 1.0
+    },
+    {
+      "n_nodes": 500,
+      "n_actions_per_node": 2,
+      "total_actions": 998,
+      "m4_recovered": 998,
+      "m4_attribution_completeness": 1.0,
+      "m5_correct": 998,
+      "m5_attribution_accuracy": 1.0
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+# ═══════════════════════════════════════════════════════════════════════════
+# AetherGovern v2.0.0 — Runtime dependencies
+# ═══════════════════════════════════════════════════════════════════════════
+#
+# This file lists ONLY runtime dependencies. For development and testing,
+# install the [dev] extra:   pip install -e ".[dev]"
+#
+# Paper (v0.1.0): https://doi.org/10.5281/zenodo.24054524
+# Package:        https://pypi.org/project/aethergovern/  (planned)
+# ═══════════════════════════════════════════════════════════════════════════
+
+# Cryptography — Ed25519 signatures, hashing for chain links
+cryptography>=41.0
+
+# ═══════════════════════════════════════════════════════════════════════════
+# Development / testing / experiments are in:
+#   - pyproject.toml  → [project.optional-dependencies].dev
+#   - pyproject.toml  → [project.optional-dependencies].experiments
+#
+# Install them with:
+#   pip install -e ".[dev,experiments]"
+# ═══════════════════════════════════════════════════════════════════════════

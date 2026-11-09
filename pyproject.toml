@@ -1,0 +1,92 @@
+# ═══════════════════════════════════════════════════════════════════════════
+# AetherGovern v2.0.0 — PyPI package configuration
+# ═══════════════════════════════════════════════════════════════════════════
+#
+# This is the reference implementation of the AetherGovern hypothesis
+# specified in v0.1.0 (DOI: 10.5281/zenodo.24054524).
+#
+# The v0.1.0 paper remains the authoritative record; this package is the
+# reference implementation alongside it.
+# ═══════════════════════════════════════════════════════════════════════════
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aethergovern"
+version = "2.0.0"
+description = "AetherGovern v2.0.0: Reference implementation of the falsification-first governance architecture"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Samir Baladi", email = "gitdeeper@gmail.com" }]
+maintainers = [{ name = "Samir Baladi", email = "gitdeeper@gmail.com" }]
+keywords = [
+    "governance",
+    "authorization",
+    "policy",
+    "accountability",
+    "revocation",
+    "dispute-resolution",
+    "multi-agent-systems",
+    "falsification",
+    "decentralized-systems",
+    "aether-family",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Topic :: System :: Distributed Computing",
+]
+dependencies = [
+    "cryptography>=41.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "ruff>=0.1",
+    "mypy>=1.0",
+]
+
+[project.urls]
+Homepage = "https://aethergovern.netlify.app"
+Repository = "https://github.com/gitdeeper15/aethergovern"
+"Bug Tracker" = "https://github.com/gitdeeper15/aethergovern/issues"
+"Research Paper" = "https://doi.org/10.5281/zenodo.24054524"
+Zenodo = "https://doi.org/10.5281/zenodo.24054524"
+OSF = "https://doi.org/10.17605/OSF.IO/TAHC8"
+ORCID = "https://orcid.org/0009-0003-8903-0029"
+"Related Work (AetherGit)" = "https://doi.org/10.5281/zenodo.23966896"
+"Related Work (AetherFlow)" = "https://doi.org/10.5281/zenodo.23979129"
+"Related Work (AetherProof)" = "https://doi.org/10.5281/zenodo.24013124"
+"Related Work (AetherMesh)" = "https://doi.org/10.5281/zenodo.24053492"
+
+[project.scripts]
+aethergovern = "aethergovern.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+aethergovern = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --cov=aethergovern --cov-report=term-missing"
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.mypy]
+python_version = "3.9"
