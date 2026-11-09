@@ -18,12 +18,6 @@
 [![Tests](https://img.shields.io/badge/Tests-0%20(no%20impl)-lightgrey)](tests/)
 [![Experiments](https://img.shields.io/badge/Experiments-0%20(no%20impl)-lightgrey)](experiments/)
 
-[![Zenodo](https://img.shields.io/badge/Zenodo-Published-blue)](https://doi.org/10.5281/zenodo.24078477)
-[![Record ID](https://img.shields.io/badge/Record%20ID-AETHERRUNTIME--01-informational)](https://doi.org/10.5281/zenodo.24078477)
-[![OSF](https://img.shields.io/badge/OSF-pending-lightgrey)](https://osf.io/)
-[![Website](https://img.shields.io/badge/Website-aether--runtime.netlify.app-00C7B7?logo=netlify&logoColor=white)](https://aether-runtime.netlify.app)
-[![Aether Family](https://img.shields.io/badge/Aether%20Family-6%20dimensions-purple)](https://aether--runtime.netlify.app)
-
 <br>
 
 **[📄 Paper](https://doi.org/10.5281/zenodo.24078477)** ·
